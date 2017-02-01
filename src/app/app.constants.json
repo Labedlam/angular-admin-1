@@ -1,9 +1,9 @@
 {
   "appname": "Angular Admin",
   "scope": "FullAccess",
-  "clientid": "D89E2196-CC75-4312-A4A9-67E4CC4BEDFB",
-  "buyerid": "A",
-  "catalogid": "SHARED",
+  "clientid": "81DB9EDC-9DCD-49BC-B43C-2B17F07AE142",
+  "buyerid": "FarmLovers",
+  "catalogid": "FarmLovers",
   "environment": "prod",
   "defaultstate": "home",
   "bootswatchtheme": null
