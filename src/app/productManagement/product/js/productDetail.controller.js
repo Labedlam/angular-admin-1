@@ -11,7 +11,7 @@ function ProductDetailController($rootScope, $exceptionHandler, $state, toastr, 
     vm.deleteProduct = deleteProduct;
 
     function updateProduct() {
-        var partial = _.pick(vm.product, ['ID', 'Name', 'Description', 'QuantityMultiplier', 'InventoryEnabled']);
+        var partial = _.pick(vm.product, ['ID', 'Name', 'Description', 'QuantityMultiplier', 'InventoryEnabled', 'xp']);
         vm.productUpdateLoading = OrderCloud.Products.Patch(SelectedProduct.ID, partial)
             .then(function(data) {
                 vm.product = angular.copy(data);
