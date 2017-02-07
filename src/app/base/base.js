@@ -25,6 +25,9 @@ function BaseConfig($stateProvider) {
                         dfd.resolve();
                     });
                 return dfd.promise;
+            },
+            CatalogID: function(OrderCloud, catalogid) {
+                catalogid ? OrderCloud.CatalogID.Set(catalogid) : OrderCloud.CatalogID.Set(OrderCloud.BuyerID.Get());
             }
         }
     });
